@@ -1,0 +1,89 @@
+{
+  "tokens_input": 169711,
+  "tokens_output": 54979,
+  "tokens_total": 224690,
+  "estimated_hours": 23.8,
+  "squad_days_equivalent": 3,
+  "hours_by_agent": {
+    "arquitecto": {
+      "hours": 1.5,
+      "calls": 1,
+      "hoursPerCall": 1.5,
+      "volumeMultiplier": 1,
+      "tokens": 2273
+    },
+    "tech_lead": {
+      "hours": 5.6,
+      "calls": 4,
+      "hoursPerCall": 0.8,
+      "volumeMultiplier": 1.76,
+      "tokens": 21621
+    },
+    "desarrollador": {
+      "hours": 9.4,
+      "calls": 8,
+      "hoursPerCall": 0.5,
+      "volumeMultiplier": 2.36,
+      "tokens": 112151
+    },
+    "qa": {
+      "hours": 7.3,
+      "calls": 8,
+      "hoursPerCall": 0.4,
+      "volumeMultiplier": 2.27,
+      "tokens": 88645
+    }
+  },
+  "modelo": "claude-sonnet-4-6",
+  "skills_loaded": true,
+  "skills_count": 4,
+  "skills_roles": [
+    {
+      "role": "arquitecto",
+      "skill_id": "GLX-DISEÑO-ARQUITECTURA-V1",
+      "skill_name": "DISEÑO-ARQUITECTURA"
+    },
+    {
+      "role": "tech_lead",
+      "skill_id": "GLX-MICROPLANIFICACION-DISEÑO-V1",
+      "skill_name": "MICROPLANIFICACION-DISEÑO"
+    },
+    {
+      "role": "desarrollador",
+      "skill_id": "GLX-FRONTEND-DESARROLLO-V1",
+      "skill_name": "FRONTEND-DESARROLLO"
+    },
+    {
+      "role": "qa",
+      "skill_id": "GLX-QA-VALIDACION-V1",
+      "skill_name": "test"
+    }
+  ],
+  "timestamp": "2026-11-11T13:25:32.568Z",
+  "by_agent": {
+    "arquitecto": {
+      "input": 910,
+      "output": 1363,
+      "calls": 1,
+      "skill_name": "DISEÑO-ARQUITECTURA"
+    },
+    "tech_lead": {
+      "input": 12121,
+      "output": 9500,
+      "calls": 4,
+      "skill_name": "MICROPLANIFICACION-DISEÑO"
+    },
+    "desarrollador": {
+      "input": 80112,
+      "output": 32039,
+      "calls": 8,
+      "skill_name": "FRONTEND-DESARROLLO"
+    },
+    "qa": {
+      "input": 76568,
+      "output": 12077,
+      "calls": 8,
+      "skill_name": "test"
+    }
+  }
+}

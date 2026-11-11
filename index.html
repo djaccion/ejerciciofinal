@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://placehold.co data:; connect-src https://www.google-analytics.com; font-src 'self'; object-src 'none'; base-uri 'self'">
+  <meta name="description" content="Metodologías de informática y TI: guías, historias y noticias del sector.">
+  <title>Metodologías TI — XP-14</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="container">
+
+      <a href="#section-home" class="site-logo" aria-label="Ir al inicio — Metodologías TI">
+        Metodologías TI
+      </a>
+
+      <button
+        class="nav-toggle btn"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="main-nav" aria-label="Navegación principal">
+        <a href="#section-home"
+           class="nav-link is-active"
+           data-target="section-home">
+          Inicio
+        </a>
+        <a href="#section-historias"
+           class="nav-link"
+           data-target="section-historias">
+          Historias
+        </a>
+        <a href="#section-noticias"
+           class="nav-link"
+           data-target="section-noticias">
+          Noticias
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN HOME -->
+    <section id="section-home" class="section-body">
+      <div class="container">
+
+        <div class="hero">
+          <h1>Metodologías de Informática y TI</h1>
+          <p class="hero-subtitle">
+            Guías prácticas, historias del sector y las últimas noticias
+            sobre metodologías ágiles, DevOps, gestión de proyectos y más.
+          </p>
+          <a href="#section-historias"
+             class="btn btn-primary nav-link"
+             data-target="section-historias">
+            Ver Historias
+          </a>
+        </div>
+
+        <section id="faq-section" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Preguntas Frecuentes</h2>
+
+          <!-- FIX #5: Añadido wrapper .faq-list para que los estilos de max-width, flex y gap se apliquen -->
+          <div class="faq-list">
+
+            <!-- FIX #6: Añadido <span class="faq-question-icon"> en cada .faq-question para el indicador visual de apertura/cierre -->
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                ¿Qué es una metodología ágil?
+                <span class="faq-question-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Una metodología ágil es un enfoque iterativo e incremental para
+                  la gestión de proyectos de software que prioriza la entrega
+                  continua de valor y la adaptación al cambio.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                ¿Cuál es la diferencia entre Scrum y Kanban?
+                <span class="faq-question-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Scrum trabaja en sprints de duración fija con roles definidos
+                  (Product Owner, Scrum Master, equipo). Kanban es un flujo
+                  continuo sin iteraciones fijas, centrado en limitar el trabajo
+                  en progreso (WIP).
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                ¿Qué significa DevOps?
+                <span class="faq-question-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  DevOps es la unión de prácticas de desarrollo (Dev) y operaciones
+                  (Ops) para acortar el ciclo de vida del desarrollo y entregar
+                  software de alta calidad de forma continua.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                ¿Qué es el marco de trabajo ITIL?
+                <span class="faq-question-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  ITIL (Information Technology Infrastructure Library) es un conjunto
+                  de prácticas para la gestión de servicios de TI que alinea los
+                  servicios tecnológicos con las necesidades del negocio.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                ¿Cuándo usar metodologías en cascada (Waterfall)?
+                <span class="faq-question-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Waterfall es adecuado cuando los requisitos están completamente
+                  definidos desde el inicio, el alcance es estable y los cambios
+                  son costosos o poco probables durante el desarrollo.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- fin .faq-list -->
+
+        </section>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN HISTORIAS -->
+    <!-- FIX #4: h2 y p.section-intro envueltos en un div.section-intro para que los selectores
+         .section-intro h2 y .section-intro p del CSS se apliquen correctamente -->
+    <section id="section-historias" class="section-body" hidden>
+      <div class="container">
+
+        <div class="section-intro">
+          <h2>Historias del Sector</h2>
+          <p>
+            Casos de éxito, lecciones aprendidas y experiencias reales de equipos
+            que han adoptado metodologías TI en sus organizaciones.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/0d6efd/ffffff?text=Historia+1"
+                 alt="Equipo de desarrollo adoptando Scrum en una empresa de software"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-03-15">15 de marzo de 2024</time> · Scrum
+              </p>
+              <h3 class="card-title">Cómo adoptamos Scrum en 90 días y duplicamos nuestra velocidad de entrega</h3>
+              <p>
+                El equipo de desarrollo de una fintech española relata su transición
+                desde un modelo en cascada hacia Scrum, los obstáculos encontrados
+                y los resultados obtenidos tras tres meses de implementación.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/198754/ffffff?text=Historia+2"
+                 alt="Panel Kanban digital con tarjetas de tareas en progreso"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-02-28">28 de febrero de 2024</time> · Kanban
+              </p>
+              <h3 class="card-title">Kanban en operaciones: reduciendo el tiempo de respuesta a incidencias en un 60%</h3>
+              <p>
+                Un equipo de soporte TI de una empresa de logística implementó
+                Kanban para visualizar y limitar su trabajo en progreso, logrando
+                una reducción significativa en los tiempos de resolución.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/dc3545/ffffff?text=Historia+3"
+                 alt="Pipeline de integración continua en pantalla de desarrollador"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-01-20">20 de enero de 2024</time> · DevOps
+              </p>
+              <h3 class="card-title">De 2 despliegues al mes a 15 al día: nuestra transformación DevOps</h3>
+              <p>
+                Una empresa de e-commerce describe cómo la adopción de prácticas
+                DevOps, CI/CD y cultura de colaboración entre desarrollo y
+                operaciones transformó radicalmente su cadencia de entregas.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/6f42c1/ffffff?text=Historia+4"
+                 alt="Reunión de equipo revisando tablero de gestión de proyectos"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2023-12-10">10 de diciembre de 2023</time> · ITIL
+              </p>
+              <h3 class="card-title">Implementando ITIL v4 en una pyme: lo que nadie te cuenta</h3>
+              <p>
+                Una consultora de 40 personas comparte su experiencia real
+                implementando ITIL v4, incluyendo los errores cometidos, el
+                coste real del proceso y los beneficios tangibles obtenidos.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/fd7e14/ffffff?text=Historia+5"
+                 alt="Equipo remoto colaborando en videollamada con pizarra virtual"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2023-11-05">5 de noviembre de 2023</time> · Agile
+              </p>
+              <h3 class="card-title">Metodologías ágiles en equipos 100% remotos: adaptaciones necesarias</h3>
+              <p>
+                Tres equipos distribuidos en diferentes zonas horarias comparten
+                cómo adaptaron las ceremonias ágiles, las herramientas y la
+                comunicación para mantener la productividad en remoto.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/20c997/ffffff?text=Historia+6"
+                 alt="Gráfica de mejora de métricas de calidad de software"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2023-10-18">18 de octubre de 2023</time> · XP
+              </p>
+              <h3 class="card-title">Extreme Programming en la práctica: TDD y pair programming en producción</h3>
+              <p>
+                Un equipo de desarrollo de software médico relata su experiencia
+                aplicando las prácticas de XP, con especial énfasis en el
+                desarrollo guiado por pruebas y la programación en pareja.
+              </p>
+              <a href="#section-historias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOTICIAS -->
+    <!-- FIX #4: h2 y p.section-intro envueltos en un div.section-intro para que los selectores
+         .section-intro h2 y .section-intro p del CSS se apliquen correctamente -->
+    <section id="section-noticias" class="section-body" hidden>
+      <div class="container">
+
+        <div class="section-intro">
+          <h2>Noticias del Sector TI</h2>
+          <p>
+            Las últimas tendencias, actualizaciones de frameworks y novedades
+            del mundo de las metodologías de informática y tecnología.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/0d6efd/ffffff?text=Noticia+1"
+                 alt="Logotipo del Agile Manifesto con fondo tecnológico"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-04-02">2 de abril de 2024</time> · Tendencias
+              </p>
+              <h3 class="card-title">El Manifiesto Ágil cumple 23 años: ¿sigue siendo relevante en 2024?</h3>
+              <p>
+                Expertos del sector analizan la vigencia de los principios del
+                Manifiesto Ágil en el contexto actual de IA generativa, equipos
+                distribuidos y presión por la velocidad de entrega.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/198754/ffffff?text=Noticia+2"
+                 alt="Interfaz de herramienta de gestión de proyectos con IA integrada"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-03-25">25 de marzo de 2024</time> · IA y Metodologías
+              </p>
+              <h3 class="card-title">IA generativa en la gestión de proyectos: ¿asistente o sustituto del Scrum Master?</h3>
+              <p>
+                Las principales herramientas de gestión de proyectos integran
+                capacidades de IA para automatizar retrospectivas, estimar
+                historias de usuario y detectar impedimentos de forma proactiva.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/dc3545/ffffff?text=Noticia+3"
+                 alt="Diagrama de flujo de plataforma de ingeniería interna"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-03-10">10 de marzo de 2024</time> · DevOps
+              </p>
+              <h3 class="card-title">Platform Engineering: la evolución natural de DevOps que está ganando terreno</h3>
+              <p>
+                El concepto de plataformas internas de desarrollo (IDP) se
+                consolida como la siguiente fase de madurez DevOps, reduciendo
+                la carga cognitiva de los equipos de desarrollo.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/6f42c1/ffffff?text=Noticia+4"
+                 alt="Certificación PMP y documentos de gestión de proyectos"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-02-14">14 de febrero de 2024</time> · Certificaciones
+              </p>
+              <h3 class="card-title">PMI actualiza el examen PMP 2024: mayor peso de enfoques ágiles e híbridos</h3>
+              <p>
+                El Project Management Institute ha revisado el contenido del
+                examen PMP para reflejar la realidad del mercado, donde el
+                50% de los proyectos utilizan enfoques híbridos o ágiles.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/fd7e14/ffffff?text=Noticia+5"
+                 alt="Gráfica del informe State of DevOps 2024"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-01-30">30 de enero de 2024</time> · Informes
+              </p>
+              <h3 class="card-title">State of DevOps Report 2024: las métricas DORA que separan a los equipos élite</h3>
+              <p>
+                El informe anual de Google Cloud revela que los equipos de alto
+                rendimiento despliegan 973 veces más frecuentemente y se
+                recuperan de fallos 6.570 veces más rápido que los de bajo rendimiento.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://placehold.co/600x340/20c997/ffffff?text=Noticia+6"
+                 alt="Diagrama de SAFe Scaled Agile Framework con múltiples equipos"
+                 width="600"
+                 height="340">
+            <div class="card-body">
+              <p class="card-meta">
+                <time datetime="2024-01-08">8 de enero de 2024</time> · Escalado
+              </p>
+              <h3 class="card-title">SAFe 6.0 vs LeSS: qué framework de escalado ágil elegir en 2024</h3>
+              <p>
+                Un análisis comparativo de los dos frameworks de escalado ágil
+                más adoptados, sus diferencias clave, casos de uso ideales y
+                el coste real de implementación en organizaciones grandes.
+              </p>
+              <a href="#section-noticias" class="btn btn-secondary">Leer más</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FIX #1 y #2: Añadida la clase 'cookie-banner' al div#cookie-banner para que los selectores
+       CSS .cookie-banner (posicionamiento, opacidad, transición) y .cookie-banner.is-visible
+       (opacity:1 en el fade-in) se apliquen correctamente al elemento -->
+  <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-modal="true" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc">
+    <div class="container">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <p id="cookie-banner-title"><strong>Aviso de cookies</strong></p>
+          <p id="cookie-banner-desc">
+            Utilizamos cookies propias y de terceros para analizar el tráfico del sitio
+            mediante Google Analytics. Puedes aceptar su uso o rechazarlo. Tu preferencia
+            se guardará en tu navegador.
+            <a href="#section-home" class="nav-link" data-target="section-home">Más información</a>.
+          </p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="cookie-accept-btn" class="btn btn-primary">Aceptar cookies</button>
+          <button id="cookie-reject-btn" class="btn btn-secondary">Rechazar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-brand">Metodologías TI — XP-14</p>
+        <nav aria-label="Navegación del pie de página">
+          <a href="#section-home" class="nav-link" data-target="section-home">Inicio</a>
+          <a href="#section-historias" class="nav-link" data-target="section-historias">Historias</a>
+          <a href="#section-noticias" class="nav-link" data-target="section-noticias">Noticias</a>
+        </nav>
+        <p class="footer-copy">
+          <small>&copy; <time datetime="2024">2024</time> Metodologías TI. Todos los derechos reservados.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"
+          integrity="sha256-jtMDFAHxslJFNbSFAFJdCI8ZTPN/RMoRMqLMCiMFBqo="
+          crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
